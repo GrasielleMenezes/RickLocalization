@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Cadastre as viagens</h1>
+<form [formGroup]="formViagem" (ngSubmit)="onSubmit()">
+<div mat-dialog-content class="form-group">
+    <mat-form-field appearance="fill">
+        <mat-label>Nome da Dimensão</mat-label>
+        <input matInput type="text" class="form-control" name="nome" id="nome" formControlName="nome" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Endereço</mat-label>
+        <input matInput type="text" class="form-control" name="endereco" id="endereco" formControlName="endereco" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Data da Viagem</mat-label>
+        <input matInput type="date" class="form-control" name="dataViagem" id="dataViagem" formControlName="dataViagem" required>
+    </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Dimensão</mat-label>
+        <input matInput type="text" class="form-control" name="dimensao" id="dimensao" formControlName="dimensao">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Observações</mat-label>
+        <textarea matInput class="form-control" name="observacao" id="observacao" formControlName="observacao"></textarea>
+      </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+    <input type="submit" class="btn btn-primary mt-4" value="Salvar" >
+    <button mat-button mat-dialog-close (click)="cancelar()">Cancelar</button>
+  
+</div>
+</form>

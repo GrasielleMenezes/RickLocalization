@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.txtcentro{
+    text-align: center;
+}
+.titulo{
+    font-family:'Franklin Gothic Medium';
+    font-size:x-large;
+    color: aquamarine;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue; 
+}

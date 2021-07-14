@@ -1,0 +1,71 @@
+<mat-grid-list cols="1" rowHeight="1:1">
+    <mat-card *ngIf="dimensaoDetalhe == 1">
+        <mat-card-header >
+          <mat-card-title>Dimensão das Pizzas, dos Móveis e dos Telefones</mat-card-title>
+         
+        </mat-card-header>
+        <img mat-card-image src="../assets/imagem_1.jpeg" alt="Dimensão 1" >
+        <mat-card-content>
+          <p>
+            Em uma, vemos seres pizza, que comem humanos e sentam em móveis normais. Passando para outra dimensão, temos seres telefone, que sentam em pizzas e comem móveis. Por fim, a última mostra seres móveis, sentados em humanos, que comem telefones. Uma nota aqui: a dimensão dos telefones apareceu antes, no episódio da TV Interdimensional, mostrando que eles tem sua própria versão de Thriller, do Michael Jackson, por lá.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="irParaHistorico(1)">Histórico</button>
+          <button mat-button (click)="irParaModal(1)">Adicionar Viagem</button>
+        </mat-card-actions>
+    </mat-card> 
+    <mat-card *ngIf="dimensaoDetalhe == 2">
+        <mat-card-header>
+          <mat-card-title>Dimensão Cronenberg C-137</mat-card-title>
+         
+        </mat-card-header>
+        
+        <img mat-card-image src="../assets/imagem_2.jpeg" alt="Dimensão 2" >
+        
+        <mat-card-content>
+          <p>
+            Para quem não sacou a referência, David Cronenberg é um cineasta canadense famoso por trabalhar com filmes de terror com monstros bizarríssimos, algo conhecido como “body horror”, como “A Mosca”. Também existe uma realidade onde uma Terra de Cronenbergs foi transformada em um planeta de seres humanos normais. E, no episódio da Cidadela dos Ricks da primeira temporada, podemos ver um Rick Cronenberg.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="irParaHistorico(2)">Histórico</button>
+          <button mat-button (click)="irParaModal(2)">Adicionar Viagem</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card *ngIf="dimensaoDetalhe == 3">
+        <mat-card-header>
+          <mat-card-title>Dimensão das aranhas telepáticas</mat-card-title>
+         
+        </mat-card-header>
+        
+        <img mat-card-image src="../assets/imagem_3.jpeg" alt="Dimensão 3" >
+        
+        <mat-card-content>
+          <p>
+            No sexto episódio da segunda temporada, “The Ricks Must Be Crazy”, Rick, Morty e Summer foram no cinema em uma realidade que parecia muito parecida com a que acompanhamos e que possui o melhor sorvete do multiverso. Porém, logo descobrimos que, nesse lugar, a humanidade vive em guerra com aranhas telepáticas gigantes que vivem no planeta e os EUA passou 11 vezes por atentados como o 11 de Setembro.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="irParaHistorico(3)">Histórico</button>
+          <button mat-button (click)="irParaModal(3)">Adicionar Viagem</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card *ngIf="dimensaoDetalhe == 4">
+        <mat-card-header>
+          <mat-card-title>Dimensão onde as pessoas têm cabeças gigantes e rostos pequenos</mat-card-title>
+         
+        </mat-card-header>
+        
+        <img mat-card-image src="../assets/imagem_4.jpeg" alt="Dimensão 4">
+        <mat-card-content>
+          <p>
+            Os capítulos que melhor exploram esses universos insanos são os da TV Interdimensional. No oitavo episódio da segunda temporada, conhecemos essa dimensão onde as pessoas têm cabeças gigantes e rostos pequenos, então precisam de refeições em porções pequeninas para caber na boca.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="irParaHistorico(4)">Histórico</button>
+          <button mat-button (click)="irParaModal(4)">Adicionar Viagem</button>
+        </mat-card-actions>
+    </mat-card>   
+</mat-grid-list>

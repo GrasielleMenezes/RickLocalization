@@ -1,0 +1,33 @@
+
+<mat-grid-list cols="2" rowHeight="2:1">.
+    <h1 class="txtcentro titulo">RickLocalization</h1>
+    <h3 class="me-30">Clique nas dimensões dos Rick's e Morty's para descobrir as suas aventuras.</h3>
+    <mat-grid-tile>
+     <button (click)="detalhes(1)" >
+      <mat-card>
+        <img mat-card-image src="../assets/imagem_1.jpeg" alt="Dimensão 1">
+      </mat-card>
+     </button> 
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button (click)="detalhes(2)">
+        <mat-card>
+          <img mat-card-image src="../assets/imagem_2.jpeg" alt="Dimensão 2">
+        </mat-card>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button (click)="detalhes(3)">
+        <mat-card>
+          <img mat-card-image src="../assets/imagem_3.jpeg" alt="Dimensão 3">
+        </mat-card>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button (click)="detalhes(4)">
+        <mat-card>
+          <img mat-card-image src="../assets/imagem_4.jpeg" alt="Dimensão 4">
+        </mat-card>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
